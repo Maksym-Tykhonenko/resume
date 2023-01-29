@@ -250,3 +250,12 @@
   line-height: 24px;
   color: var(--background-content);
 }
+
+.language {
+  text-decoration: none;
+  color: var(--background-content);
+}
+
+.language:hover {
+  color: var(--accent-text-color)
+}
