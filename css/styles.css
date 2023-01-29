@@ -1,212 +1,252 @@
 :root {
-  --primary-text-color: rgba(33, 33, 33, 1);
-  --text-color: rgba(117, 117, 117, 1);
-  --footer-cont-color: rgba(255, 255, 255, 0.6);
-  --third-color: #ffffff;
-  --accent-color: rgba(33, 150, 243, 1);
-  --main-bg-color: #ffffff;
-  --second-bg-color: rgba(47, 48, 58, 1);
-  --third-bg-color: rgba(245, 244, 250, 1);
-  --primary-button-color: rgba(245, 244, 250, 1);
+  --background-content: #FFFFFF;
+  --background-sidebar: #1E2939;
+
+
+  --main-text-color: #595959;
+  --first-text-color: #000000;
+  --second-text-color: #A8A8A8;
+  --accent-text-color: #FB6D3A;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
-  font-family: "Roboto", sans-serif;
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
+.container {
+  margin: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
+  background-color: var(--background-content);
+  margin: 40px auto;
+  box-shadow: 6px 6px 20px rgb(0 0 0 / 10%);
 }
 
-.list {
-  list-style: none;
+.content-section {
+  font-family: 'Montserrat';
+  padding: 100px 90px;
 }
 
-/*header*/
-.header-logo {
-  font-family: Raleway;
-  font-size: 26px;
+
+
+/* about me section */
+
+.about-me-section {
+  margin-bottom: 40px;
+}
+
+.about-me-profession {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--first-text-color);
+  margin-bottom: 20px;
+}
+
+.about-me-name {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  color: var(--first-text-color);
+  margin-bottom: 25px;
+}
+
+.about-me-description {
+  width: 400px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--main-text-color);
+}
+
+
+
+/* my projects section */
+
+.my-projects-section {
+  margin-bottom: 50px;
+}
+
+.main-content-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--first-text-color);
+  margin-bottom: 10px;
+}
+
+.my-projects-list {
+  padding: 0 0 0 17px;
+}
+
+.my-projects-item {
+  color: var(--first-text-color);
   font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+}
+
+.my-projects-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--main-text-color);
+  margin-left: 5px;
+}
+
+.my-projects-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--main-text-color);
+}
+
+.my-projects-brakcet {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--first-text-color);
+}
+
+.link {
   text-decoration: none;
-}
-.header-logo .logo-web {
-  color: var(--accent-color);
+  color: var(--background-content);
 }
 
-.header-logo .logo-studio {
-  color: var(--primary-text-color);
+.link:hover {
+  color: var(--accent-text-color)
 }
 
-.header-item {
-  color: var(--primary-text-color);
+
+
+/* my work experience */
+
+.my-work-experience-block {
+  margin: 0 15px 0 0;
+}
+
+.my-work-experience-company {
+  color: var(--accent-text-color);
+}
+
+.my-work-experience-time {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--second-text-color);
+  margin: 0 0 10px 0;
+}
+
+.my-work-experience-devider {
+  color: var(--first-text-color);
+}
+
+.my-work-experience-duties {
+  padding: 0 0 0 18px;
+}
+
+.my-work-experience-duty {
+  font-weight: normal;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-.header-item:hover,
-.header-item:focus {
-  color: var(--accent-color);
+  line-height: 24px;
+  color: var(--main-text-color);
 }
 
-.header-list .header-item.current {
-  color: var(--accent-color);
-}
-.page-header .contact-link {
-  color: var(--text-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+
+
+/* my education section */
+
+.my-education-section {
+  margin: 0 12px 0 12px;
 }
 
-/*main hero*/
-.hero {
-  background: var(--second-bg-color);
-  text-align: center;
-}
-.hero .titel {
-  color: var(--third-color);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.hero .button {
-  background-color: var(--accent-color);
-  color: var(--third-color);
+.my-education-university {
+  font-weight: bold;
   font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  text-align: center;
-  cursor: pointer;
-  border-radius: px;
+  line-height: 20px;
+  color: var(--accent-text-color);
 }
 
-/*main benefits*/
-.non-title {
-  visibility: hidden;
-}
-.ben-list-title {
+.my-education-professional {
+  font-weight: bold;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-transform: uppercase;
+  line-height: 17px;
+  color: var(--first-text-color);
+  padding: 0 12px 0 0;
 }
-.ben-list-text {
+
+
+
+/* sidebar section */
+
+.sidebar-section {
+  background-color: var(--background-sidebar);
+  width: 370px;
+  padding: 15px 20px 0px 20px;
+}
+
+.my-contact-section {
+  margin: 50px 0px 0px 30px;
+}
+
+.contacts-section-type {
+  font-weight: bold;
   font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--text-color);
-}
-/*main*/
-.section-title {
-  color: var(--primary-text-color);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
-/*main team*/
-.team-title {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-}
-.team-text {
-  color: var(--text-color);
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-}
-.team-section {
-  background: var(--third-bg-color);
+  line-height: 24px;
+  color: var(--background-content);
+  margin-right: 7px;
 }
 
-/*footer*/
-.footer {
-  background: var(--second-bg-color);
-}
-.footer-logo {
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.footer-logo .logo-web {
-  color: var(--accent-color);
-}
-
-.footer-logo .logo-studio {
-  color: var(--third-color);
-}
-
-.footer-text {
-  color: var(--third-color);
+.contacts-section-link {
+  color: var(--second-text-color);
+  font-weight: normal;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  font-style: normal;
+  line-height: 24px;
 }
 
-.footer-contact .contact-link {
-  color: var(--footer-cont-color);
-  font-style: normal;
+
+.contacts-section-link:hover,
+.contacts-section-link:focus {
+  color: var(--accent-text-color)
+}
+
+.my-tech-skills-section {
+  margin: 50px 0px 0px 40px;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--background-content);
+  margin-bottom: 10px;
+}
+
+.tech-skills-list {
+  padding: 0 0 0 0px;
+}
+
+.tech-skills-item {
+  color: var(--accent-text-color);
+}
+
+.tech-skills-item-text {
+  font-weight: normal;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-color);
+  line-height: 24px;
+  color: var(--background-content);
 }
 
-/*portfolio page*/
-.portfolio .button-item:hover,
-.portfolio .button-item:focus {
-  background: var(--accent-color);
-  color: var(--third-color);
+.my-soft-skills-section {
+  margin: 50px 0px 0px 40px;
 }
 
-.portfolio .button-item {
-  background-color: var(--primary-button-color);
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  text-align: center;
+.soft-skills-list {
+  padding: 0 0 0 0px;
 }
 
-.portfolio .project-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-align: left;
+.soft-skills-item {
+  color: var(--accent-text-color);
 }
 
-.portfolio .project-text {
-  color: var(--text-color);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
+.soft-skills-item-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--background-content);
 }
