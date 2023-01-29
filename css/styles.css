@@ -243,6 +243,7 @@
 
 .soft-skills-item {
   color: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .soft-skills-item-text {
@@ -255,6 +256,7 @@
 .language {
   text-decoration: none;
   color: var(--background-content);
+  cursor: pointer;
 }
 
 .language:hover {
