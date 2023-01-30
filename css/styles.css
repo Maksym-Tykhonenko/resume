@@ -21,7 +21,7 @@
 
 .content-section {
   font-family: 'Montserrat';
-  padding: 100px 90px;
+  padding: 80px 90px;
 }
 
 
@@ -46,6 +46,7 @@
   line-height: 55px;
   color: var(--first-text-color);
   margin-bottom: 25px;
+  margin-top: 0;
 }
 
 .about-me-description {
