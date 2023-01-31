@@ -34,7 +34,7 @@
 
 .about-me-profession {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 17px;
   color: var(--first-text-color);
   margin-bottom: 20px;
@@ -95,6 +95,11 @@
   font-size: 14px;
   line-height: 24px;
   color: var(--main-text-color);
+  
+}
+
+.my-projects-link:hover {
+  color: var(--accent-text-color)
 }
 
 .my-projects-brakcet {
@@ -143,6 +148,13 @@
 }
 
 .my-work-experience-duty {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--main-text-color);
+}
+
+.my-work-experience-achievement {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
