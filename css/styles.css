@@ -21,7 +21,7 @@
 
 .content-section {
   font-family: 'Montserrat';
-  padding: 80px 90px;
+  padding: 30px 90px;
 }
 
 
@@ -29,7 +29,7 @@
 /* about me section */
 
 .about-me-section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .about-me-profession {
@@ -62,7 +62,7 @@
 /* my projects section */
 
 .my-projects-section {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .main-content-title {
